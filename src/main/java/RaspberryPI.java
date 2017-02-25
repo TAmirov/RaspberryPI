@@ -12,7 +12,7 @@ import com.pi4j.io.spi.SpiChannel;
 import com.pi4j.io.spi.SpiDevice;
 
 public class RaspberryPI {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         System.out.println("<--Pi4J--> MCP3008 ADC Example (NON-MONITORED) ... started.");
 
@@ -58,7 +58,7 @@ public class RaspberryPI {
 
             // Print current analog input conversion values from each input channel
             for(GpioPinAnalogInput input : inputs){
-                sb.append(" \t[" + input.getValue() + "] ");
+                sb.append(" [" + input.getValue() + "] ");
             }
 
             // Print out all analog input conversion values

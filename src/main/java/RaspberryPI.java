@@ -14,7 +14,7 @@ import com.pi4j.io.spi.SpiDevice;
 public class RaspberryPI {
     public static void main(String[] args) throws Exception {
 
-        System.out.println("<--Pi4J--> MCP3008 ADC Example (NON-MONITORED) ... started.");
+        System.out.println("[1] [2] [3] [4] [5] [6] [7] [8]");
 
         // Create gpio controller
         final GpioController gpio = GpioFactory.getInstance();
